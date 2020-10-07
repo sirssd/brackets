@@ -19,5 +19,5 @@ module.exports = function check(str, bracketsConfig) { // check ( '([{}])' ,  [ 
         if (arrFromStr.length == 1 || count == bracketsConfig.length) return false;
     }
 
-    return Array.isArray(brackets);
+    if(brackets.length != 0) return true;
 }
